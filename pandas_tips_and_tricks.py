@@ -2,7 +2,6 @@
 pandas_tips_and_tricks.py
 
 🔥 Handy Pandas Tips & Tricks for Efficient Data Analysis
-Author: OscarRiojaDev
 """
 
 import pandas as pd
