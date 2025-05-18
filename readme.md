@@ -4,7 +4,7 @@ A collection of essential Python scripts for foundational and advanced data anal
 
 ---
 
-- ✅ **`eda_template.py`** — Reusable Exploratory Data Analysis boilerplate using `pandas`, `matplotlib`, `seaborn`, and `sweetviz`.
+- ✅ **`eda_template.py`** — Reusable Exploratory Data Analysis boilerplate using `pandas`, `matplotlib`, and `seaborn`.
 
 - ✅ **`data_cleaning_utils.py`** — Custom functions for handling missing data, detecting outliers, removing duplicates, and formatting.
 
