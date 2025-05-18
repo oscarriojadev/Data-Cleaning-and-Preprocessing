@@ -23,7 +23,7 @@ sns.set(style="whitegrid")
 # 🔧 CONFIGURATION
 # =============================
 
-DATA_PATH = "sample_data.csv"  # Replace with your dataset path
+DATA_PATH = "sample_data.csv"  # Replace with dataset path
 MAX_ROWS = 5000  # Limit to speed up big data analysis
 
 # =============================
