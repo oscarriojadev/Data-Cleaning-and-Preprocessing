@@ -2,8 +2,6 @@
 
 """
 📊 EDA Template Script
-Author: Your Name
-Date: 2025-05-11
 Description: A reusable script for exploratory data analysis (EDA) using pandas, seaborn, and matplotlib.
 """
 
