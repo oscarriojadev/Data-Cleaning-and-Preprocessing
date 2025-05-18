@@ -32,7 +32,7 @@ MAX_ROWS = 5000  # Limit to speed up big data analysis
 
 def load_data(path: str) -> pd.DataFrame:
     try:
-        df = pd.read_csv(path, nrows=MAX_ROWS)
+        df = pd.read_csv(path=DATA_PATH, nrows=MAX_ROWS)
         print(f"✅ Loaded dataset with {df.shape[0]} rows and {df.shape[1]} columns")
         return df
     except Exception as e:
