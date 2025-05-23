@@ -62,7 +62,9 @@ def distribution_plots(df):
     plt.tight_layout()
     plt.show()
 
+#  =============================
 # 📊 Categorical Plots (Group Comparison)
+#  =============================
 def categorical_plots(df):
     print("📊 Categorical Plots: Use to compare distributions across categories.")
     plt.figure(figsize=(12, 5))
@@ -78,7 +80,9 @@ def categorical_plots(df):
     plt.tight_layout()
     plt.show()
 
+#  =============================
 # 🔗 Correlation Heatmap
+#  =============================
 def correlation_heatmap(df):
     print("🔗 Heatmaps: Use to show correlation or relationship matrix.")
     corr = df[['Value', 'Score']].corr()
@@ -86,7 +90,9 @@ def correlation_heatmap(df):
     plt.title('Seaborn Heatmap')
     plt.show()
 
+#  =============================
 # 📈 Time Series Line Plot
+#  =============================
 def time_series_plot(df):
     print("📈 Time Series Plot: Use for trend analysis over time.")
     df_ts = df.groupby('Date')['Value'].mean().reset_index()
@@ -99,7 +105,9 @@ def time_series_plot(df):
     plt.tight_layout()
     plt.show()
 
+#  =============================
 # 🚀 Interactive Plotly Visuals
+#  =============================
 def interactive_plotly(df):
     print("🚀 Plotly Interactive Plot: Use for dashboards and exploration.")
     fig = px.scatter(
@@ -109,7 +117,10 @@ def interactive_plotly(df):
     )
     fig.show()
 
+#  =============================
 # 🧠 When to Use What (Quick Reference)
+# Print Plot Guide
+#  =============================
 def print_plot_guide():
     guide = {
         'Histogram': '➡️ Use to show distribution of a numeric variable.',
