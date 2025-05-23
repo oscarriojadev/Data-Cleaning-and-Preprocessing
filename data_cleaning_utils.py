@@ -5,7 +5,11 @@ import numpy as np
 from sklearn.impute import SimpleImputer
 
 # ----------------------------------------
-# 🔍 Missing Values Handling
+# 🔍 Missing Values Handling:
+# -- Missing Value Summary
+# -- Fill Missing With Mode
+# -- Fill Missing With Mean
+# -- Drop Missing Treshold
 # ----------------------------------------
 
 def missing_value_summary(df):
@@ -31,7 +35,9 @@ def drop_missing_threshold(df, threshold=0.5):
     return df.loc[:, df.isnull().mean() < threshold]
 
 # ----------------------------------------
-# 🧹 Duplicate & Outlier Handling
+# 🧹 Duplicate & Outlier Handling:
+# -- Drop Duplicates
+# -- Remove Outliers IQR
 # ----------------------------------------
 
 def drop_duplicates(df):
@@ -50,7 +56,9 @@ def remove_outliers_iqr(df, columns):
     return df
 
 # ----------------------------------------
-# 🧠 Encoding Categorical Features
+# 🧠 Encoding Categorical Features:
+# -- Encode Categorical
+# -- Label Encode
 # ----------------------------------------
 
 def encode_categorical(df, columns, drop_first=True):
@@ -66,7 +74,9 @@ def label_encode(df, columns):
     return df
 
 # ----------------------------------------
-# 🧪 Data Type Conversion
+# 🧪 Data Type Conversion:
+# -- Convert to Datetime
+# -- Convert to Category
 # ----------------------------------------
 
 def convert_to_datetime(df, columns):
@@ -82,7 +92,9 @@ def convert_to_category(df, columns):
     return df
 
 # ----------------------------------------
-# 🧾 Text Cleaning
+# 🧾 Text Cleaning:
+# -- Clean Text Column
+# -- Clean Multiple Text Columns
 # ----------------------------------------
 
 def clean_text_column(df, column):
@@ -97,7 +109,11 @@ def clean_multiple_text_columns(df, columns):
     return df
 
 # ----------------------------------------
-# 📊 General Utilities
+# 📊 General Utilities:
+# -- Standardize Column Names
+# -- Drop Unused Columns
+# -- Drop Unused Columns
+# -- Summarize Dataset
 # ----------------------------------------
 
 def standardize_column_names(df):
