@@ -20,10 +20,10 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
 
-# ----------------------------------------
+#  =============================
 # ✅ Load or simulate data:
 # -- Generate Sample Data
-# ----------------------------------------
+#  =============================
 
 def generate_sample_data():
     np.random.seed(42)
@@ -38,7 +38,7 @@ def generate_sample_data():
 
 df = generate_sample_data()
 
-# ----------------------------------------
+#  =============================
 # 🎯 Distribution Plots (Univariate Analysis):
 # -- Distribution Plots
 # -- Categorical Plots
@@ -46,7 +46,7 @@ df = generate_sample_data()
 # -- Timeseries Plot
 # -- Interactive Plotly
 # -- Print Plot Guide
-# ----------------------------------------
+#  =============================
 def distribution_plots(df):
     print("🎯 Distribution Plots: Use to understand variable distribution and skew.")
     plt.figure(figsize=(12, 5))
